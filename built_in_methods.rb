@@ -8,19 +8,29 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The .include? method is called on the string object "Hello World"
+# The arguments "Hello" is passed; include has one clear job which is to search for a specific string in the string
+# The return value is the boolean true
 "Hello World".include?("Hello")
 
-
+# The .end_with? method is called on the string object "Hello World"
+# The arguments "Hello" is passed; .end_with? has one clear job which is to search for a specific string in the end of the string
+# The return value is the boolean false
 "Hello World".end_with?("Hello")
 
-
+# The .end_with? method is called on the string object "Hello World"
+# The arguments "rld" is passed; .end_with? has one clear job which is to search for a specific 3 letter string "rld" in the end of the last string
+# The return value is the boolean true
 "Hello World".end_with?("rld")
 
-
+# The .even? method is called on the integer 12
+#  No arguments are passed; .even? has one clear job which is to identify whether the integer connected to the method is even.
+# The return value is the boolean true
 12.even?
 
-
+# The .next? method is called on the integer 18
+#  No arguments are passed; .next? has one clear job which is to take the initial integer, add one whole number to it and output the next number in the number line.
+# The return value is 19
 18.next
 
 
@@ -39,6 +49,17 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# The .chop method is called on the first_names variable, which stores the string object "Victors". 
+# The .chop method removes the last letter from the current string.
+# The puts command prints the return value of the .chop method to the console.
+first_names = "Victors"
+puts first_names.chop
+
+# The .empty? method is called on the empty_string variable, which stores the string object "". 
+# The .empty method checks if the assigned string is empty. It will return a boolean value true if empty, false, if not.
+# The puts command prints the return value of the .empty? method to the console.
+empty_string = ""
+puts empty_string.empty?
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -47,6 +68,17 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# Variable called num1 is assigned the value 14.
+# We are outputting the vallue of num1 with the method .even?
+# Since the value is even, it is returning a boolean that is true.
+num1 = 14
+puts num1.even?
+
+# Variable called num2 is assigned the value 11.
+# We are outputting the vallue of num2 with the method .odd?
+# Since the value is odd, it is returning a boolean that is true.
+num2 = 11
+puts num2.odd?
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -54,3 +86,17 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# Variable brand_of_shoes is assigned an array with 4 elements.
+# We are printing the vallue of brand_of_shoes with the method .push
+# With the .push method, we are adding an element that is passed in as an argument to the end of the array.
+brand_of_shoes = ["nikes", "addidas", "converse", "martins"]
+print brand_of_shoes.push("steve madden")
+
+# Variable favorite_colors is assigned an array with 4 elements.
+# We are printing the value of favorite_colorss with the method .shift
+# With the .shift method, we are removing the element at the beggining of the array. 
+#We are printing the array with 3 elements total.
+favorite_colors = ["blue", "white", "red", "pink"]
+favorite_colors.shift
+print favorite_colors

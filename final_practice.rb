@@ -24,8 +24,11 @@ def custom_greeting(name)
     return "Hello my dear friend #{name}."
 end
 
-puts custom_greeting("Bob")
+cus_gree1 = custom_greeting("Bob")
+cus_gree2 = custom_greeting("Marley")
 
+puts cus_gree1
+putscus_gree2
 # What is the return value of your method?
 # Hello my dear friend  plus the inputed argument #{name}.
 # How many arguments did you pass your method? Just one
@@ -38,8 +41,11 @@ def greet_person(first, middle, last_name)
     return "My full name is #{first}, #{middle}, #{last_name}"
 end
 
-puts greet_person("Victor", "Antonio", "Sanchez")
+greet_per1 = greet_person("Victor", "Antonio", "Sanchez")
+greet_per2 = greet_person("Victor", "Antonio", "Sanchez")
 
+puts greet_per1
+puts greet_per2
 # What is the return value of your method?
 #"My full name is #{first}, #{middle}, #{last_name}"
 # How many arguments did you pass your method?
@@ -54,9 +60,11 @@ def square(int)
     return Math.sqrt(int)
   end
   
-  final_solution =square(4)
+ final_solution1 = square(4)
+ final_solution2 = square(8)
   
-  puts "The sqaure root of 4 is #{final_solution}!"
+ puts "The sqaure root of 4 is #{final_solution1}!"
+ puts "The sqaure root of 8 is #{final_solution1}!"
 
 # What is the return value of your method?
 #Math.sqrt(int)

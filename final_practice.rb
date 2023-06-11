@@ -42,7 +42,7 @@ def greet_person(first, middle, last_name)
 end
 
 greet_per1 = greet_person("Victor", "Antonio", "Sanchez")
-greet_per2 = greet_person("Victor", "Antonio", "Sanchez")
+greet_per2 = greet_person("Isabel", "Estrella", "Sanchez")
 
 puts greet_per1
 puts greet_per2
